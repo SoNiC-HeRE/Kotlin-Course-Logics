@@ -1,0 +1,42 @@
+fun main() {
+       val numbers=listOf(1,2,3,4,5,6)
+       println("List: $numbers")
+       println("Size: ${numbers.size}")
+       println("First Element: ${numbers[0]}")
+       println("Second Element: ${numbers[1]}")
+       println("Last Index: ${numbers[numbers.size-1]}")
+       println("First element:${numbers.first()}")
+       println("Second element:${numbers.last()}")
+       println("Contains 4 ?${numbers.contains(4)}")
+       println("Contains 7 ?${numbers.contains(7)}")
+       
+     val number=listOf(1,78,38,434,5,776,777,4,9)
+     println("List: $number")
+     println("Sorted List: ${number.sorted()}")
+     println("Reversed List: ${number.reversed()}")
+     
+     val entrees=mutableListOf<String>()
+     println("Entrees: $entrees")
+     
+     println("Add Noodles: ${entrees.add("noodles")}")
+     println("Entrees: $entrees")
+     println("Add Spaghetti: ${entrees.add("spaghetti")}")
+     println ("Entrees: $entrees")
+     
+     val moreITEMS=listOf("ravioli","lasagna","fettuccine")
+     println("Add List:${entrees.addAll(moreITEMS)}")
+     println("Entrees;$entrees")
+     
+     println("Remove spaghetti:${entrees.remove("spaghetti")}")
+     println("Entrees: $entrees")
+     println("Remove item that doesn't exist: ${entrees.remove("rice")}")
+     println("Entrees: $entrees")
+     
+     println("Remove first element: ${entrees.removeAt(0)}")
+     println("Entrees: $entrees")
+     
+     entrees.clear()
+     println("Entrees: $entrees")
+     
+     println("Empty? ${entrees.isEmpty()}")
+}
